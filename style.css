@@ -1,0 +1,399 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  background-image: url("background.jpg"); 
+  background-repeat: repeat;  
+  background-position: center; 
+  background-attachment: fixed;
+  background-size: cover;
+ 
+}
+.foreground {
+  backdrop-filter: blur(10px);
+} 
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.select {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.select h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  color: #17a589 ;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px  5px black;
+}
+
+.select input[type="file"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.mailInfo {
+  padding: 20px;
+  border-radius: 4px;
+  justify-content: center;
+
+}
+
+.mailInfo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailInfo h2 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  color:#17a589;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px  5px black;
+}
+
+.mailInfo input[type="email"],
+.mailInfo input[type="text"],
+.mailInfo textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+}
+
+.mailInfo textarea {
+  resize: vertical;
+}
+
+.mailInfo button {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #17a589;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.mailInfo button:hover {
+  background-color: #000;
+}
+
+.tables-container {
+  max-height: 300px; 
+  overflow: auto;
+}
+
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.valTab,
+.invalTab {
+  flex-basis: calc(50% - 10px);
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tables table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  table-layout: fixed; /* Added to enforce fixed table layout */
+}
+
+.tables td {
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Added to prevent long text from wrapping */
+  overflow: hidden; /* Added to hide overflowing text */
+  text-overflow: ellipsis; /* Added to display ellipsis for overflowing text */
+}
+
+.tables h2 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24spx;
+  color: #fcfbfb;
+  position: sticky;
+  top: 0;
+  background-color: #17a589 ;
+  box-shadow:2px 2px  10px black;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color:aliceblue;
+  border-radius: 10px;
+}
+
+.footer-column {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-column h3 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  color:black ;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color:#000 ;
+  background-color:aliceblue;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  color: #666;
+  
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+#scroll-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#scroll-top-btn:hover {
+  background-color: #333;
+}
+
+nav {
+  width: 100%;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+nav ul li:hover {
+  transform: scale(0.8);
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color:#000;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+  background-color:#17a589;
+}
+
+nav ul {
+  gap: 16px; /* Adjust the spacing between the navigation links */
+}
+
+
+.mail-icon:hover {
+  transform: scale(0.8); /* Adjust the scale value to control the zoom-out effect */
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
+
+  .select h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .select h1 {
+    font-size: 36px;
+  }
+
+  .select input[type="file"] {
+    max-width: none;
+  }
+
+  .tables {
+    flex-direction: column;
+  }
+
+  .valTab,
+  .invalTab {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .mailInfo input[type="email"],
+  .mailInfo input[type="text"],
+  .mailInfo textarea {
+    font-size: 14px;
+  }
+  
+  .mailInfo button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+  }
+  
+  .footer-column p {
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 360px;
+  }
+
+  .select h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .select input[type="file"] {
+    font-size: 14px;
+  }
+
+  .mailInfo h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .mailInfo input[type="email"],
+  .mailInfo input[type="text"],
+  .mailInfo textarea {
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .mailInfo button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .tables {
+    margin-top: 10px;
+  }
+
+  .tables h2 {
+    font-size: 20px;
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .footer-column p {
+    font-size: 14px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+
